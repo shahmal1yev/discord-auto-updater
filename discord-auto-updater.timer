@@ -1,0 +1,12 @@
+[Unit]
+Description=Discord Auto-Updater Timer
+Documentation=file:///var/www/repos/discord/README.md
+Requires=discord-auto-updater.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=2h
+
+[Install]
+WantedBy=timers.target

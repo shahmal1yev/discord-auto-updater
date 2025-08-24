@@ -1,0 +1,21 @@
+[Unit]
+Description=Discord Auto-Updater
+Documentation=file:///var/www/repos/discord/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/usr/local/bin/discord-auto-updater.sh --silent
+StandardOutput=journal
+StandardError=journal
+PrivateTmp=yes
+ProtectSystem=strict
+ReadWritePaths=/var/log /var/run /tmp
+ProtectHome=yes
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target
