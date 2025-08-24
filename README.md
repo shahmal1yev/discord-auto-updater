@@ -303,17 +303,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 If you encounter issues or have suggestions, please report them in the GitHub Issues section.
 
-### Planned Features
-
-- [ ] Discord Canary and PTB support
-- [ ] GUI interface for configuration
-- [ ] Multiple Discord installation management
-- [ ] Rollback functionality for failed updates
-- [ ] Email notifications for updates
-- [ ] API webhook integration
-- [ ] Custom update schedules
-- [ ] Update size and bandwidth optimization
-
 ## ❓ FAQ
 
 **Q:** When does the update check happen?  
